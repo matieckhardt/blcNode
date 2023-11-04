@@ -1,0 +1,141 @@
+/* Base styles - assuming a mobile-first approach */
+.main-accordion {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  padding: 5vw;
+  height: auto;
+  overflow: hidden;
+  color: white !important;
+}
+
+.accordion {
+  color: white;
+  display: block;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  border-radius: 36px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90vw; /* start with a default mobile width */
+  margin-bottom: 15%;
+}
+
+.layer {
+  color: white;
+  border-radius: 35px;
+  margin-bottom: -75px;
+  height: auto;
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0;
+  transition: background-color 10s ease-in-out, padding-bottom 0.5s ease-out;
+}
+
+.layerTitle {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 300;
+  text-align: center;
+  height: 60px;
+  padding-top: 5px;
+}
+
+.layerDescription {
+  color: white;
+  text-align: left;
+  padding: 1px 100px 0px 100px; /* Responsive padding */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  line-height: 1.5;
+}
+
+.layer.active {
+  background-color: #f0f0f0;
+  padding-bottom: 50px;
+}
+.layer.active strong {
+  color: white;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.layer.active .layerDescription {
+  transition: max-height 2s ease-out;
+}
+/* Mobile resolutions */
+@media (max-width: 768px) {
+  .main-accordion {
+    height: auto;
+    max-height: 150vh;
+    padding-bottom: 20vh;
+  }
+  .accordion {
+    width: 80vw;
+  }
+  .layerTitle {
+    height: 60px;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .layerDescription {
+    padding: 0px;
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Desktop resolutions */
+@media (min-width: 768px) {
+  .accordion {
+    width: 80vw;
+  }
+  .layer {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .accordion {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .accordion {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .accordion {
+    width: 50vw;
+  }
+}
+
+/* Adjusting based on common desktop resolutions */
+@media (min-width: 1366px) {
+  .main-accordion {
+    padding: 5vw 10vw; /* Adjusting padding for larger screens */
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-accordion {
+    padding: 5vw 15vw; /* Adjusting padding for larger screens */
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-accordion {
+    padding: 5vw 20vw; /* This could be too much padding, adjust as necessary */
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-accordion {
+    padding: 5vw 25vw; /* Adjusting padding for very large screens */
+  }
+}

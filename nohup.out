@@ -1,0 +1,194 @@
+server on port:  3000
+server on port:  3000
+[Object: null prototype] {
+  nombre: 'MARIA CECILIA FONTANA',
+  email: 'mcfontana.mc@gmail.com',
+  asunto: 'Consulta sobre cursos',
+  mensaje: 'Que exámenes internacionales preparan? Estoy interesada en rendir el IELTS o TOEFL y necesito prepararme.',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: MARIA CECILIA FONTANA</p>
+    <p>Correo: mcfontana.mc@gmail.com</p>
+    <p>Asunto: Consulta sobre cursos</p>
+    <p>Mensaje: Que exámenes internacionales preparan? Estoy interesada en rendir el IELTS o TOEFL y necesito prepararme.</p>
+    
+/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774
+            err = new Error(message);
+                  ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+    at SMTPConnection._actionAUTHComplete (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:1513:34)
+    at SMTPConnection.<anonymous> (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+    at SMTPConnection._processResponse (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:932:20)
+    at SMTPConnection._onData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:365:28)
+    at addChunk (node:internal/streams/readable:314:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+server on port:  3000
+[Object: null prototype] {
+  nombre: 'Lucas Zelada',
+  email: 'lucaszela35@gmail.com',
+  asunto: 'Vacante profesor de inglés remoto',
+  mensaje: 'Buenos días, soy docente de inglés y vi que buscan personal. Quisiera saber de cuánto es la remuneración por hora. Gracias',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: Lucas Zelada</p>
+    <p>Correo: lucaszela35@gmail.com</p>
+    <p>Asunto: Vacante profesor de inglés remoto</p>
+    <p>Mensaje: Buenos días, soy docente de inglés y vi que buscan personal. Quisiera saber de cuánto es la remuneración por hora. Gracias</p>
+    
+[Object: null prototype] {
+  nombre: 'Lucas Zelada',
+  email: 'lucaszela35@gmail.com',
+  asunto: 'Vacante profesor de inglés remoto',
+  mensaje: 'Buenos días, soy docente de inglés y vi que buscan personal. Quisiera saber de cuánto es la remuneración por hora. Gracias',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: Lucas Zelada</p>
+    <p>Correo: lucaszela35@gmail.com</p>
+    <p>Asunto: Vacante profesor de inglés remoto</p>
+    <p>Mensaje: Buenos días, soy docente de inglés y vi que buscan personal. Quisiera saber de cuánto es la remuneración por hora. Gracias</p>
+    
+/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774
+            err = new Error(message);
+                  ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+    at SMTPConnection._actionAUTHComplete (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:1513:34)
+    at SMTPConnection.<anonymous> (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+    at SMTPConnection._processResponse (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:932:20)
+    at SMTPConnection._onData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:365:28)
+    at addChunk (node:internal/streams/readable:314:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+node:events:342
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1306:16)
+    at listenInCluster (node:net:1354:12)
+    at Server.listen (node:net:1441:7)
+    at Function.listen (/home/bostonce/public_html/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/bostonce/public_html/app.js:16:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:988:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:828:14)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1333:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+server on port:  3010
+server on port:  3010
+[Object: null prototype] {
+  nombre: 'Khenya',
+  email: 'khenya003@outlook.com',
+  asunto: 'Información ',
+  mensaje: 'Me gustaría tener información para cursos de ingles intensivos para este verano, para alguien de 21 años ',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: Khenya</p>
+    <p>Correo: khenya003@outlook.com</p>
+    <p>Asunto: Información </p>
+    <p>Mensaje: Me gustaría tener información para cursos de ingles intensivos para este verano, para alguien de 21 años </p>
+    
+[Object: null prototype] {
+  nombre: 'Khenya',
+  email: 'khenya003@outlook.com',
+  asunto: 'Información ',
+  mensaje: 'Me gustaría tener información para cursos de ingles intensivos para este verano, para alguien de 21 años ',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: Khenya</p>
+    <p>Correo: khenya003@outlook.com</p>
+    <p>Asunto: Información </p>
+    <p>Mensaje: Me gustaría tener información para cursos de ingles intensivos para este verano, para alguien de 21 años </p>
+    
+/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774
+            err = new Error(message);
+                  ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+    at SMTPConnection._actionAUTHComplete (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:1513:34)
+    at SMTPConnection.<anonymous> (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+    at SMTPConnection._processResponse (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:932:20)
+    at SMTPConnection._onData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:365:28)
+    at addChunk (node:internal/streams/readable:314:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+server on port:  3010
+[Object: null prototype] {
+  nombre: 'Esteban',
+  email: 'Test@test.com',
+  asunto: 'Test',
+  mensaje: 'dasdas test',
+  url: ''
+}
+
+    <h4>Mensaje del formulario:</h4>
+    <p>Nombre: Esteban</p>
+    <p>Correo: Test@test.com</p>
+    <p>Asunto: Test</p>
+    <p>Mensaje: dasdas test</p>
+    
+/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774
+            err = new Error(message);
+                  ^
+
+Error: Invalid login: 535 Incorrect authentication data
+    at SMTPConnection._formatError (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:774:19)
+    at SMTPConnection._actionAUTHComplete (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:1513:34)
+    at SMTPConnection.<anonymous> (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:540:26)
+    at SMTPConnection._processResponse (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:932:20)
+    at SMTPConnection._onData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:739:14)
+    at TLSSocket.SMTPConnection._onSocketData (/home/bostonce/public_html/node_modules/nodemailer/lib/smtp-connection/index.js:189:44)
+    at TLSSocket.emit (node:events:365:28)
+    at addChunk (node:internal/streams/readable:314:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Incorrect authentication data',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
