@@ -1,53 +1,54 @@
-#team {
-  display: block;
-  text-align: center;
-  background-color: #002a4b;
-  color: white;
-  margin-bottom: 30px;
-}
-.equipo {
-  display: flex;
-  flex-wrap: wrap; /* Allow the flex items to wrap as needed */
-  justify-content: space-around; /* Distribute space around the items */
-  align-items: center; /* Align items vertically */
-  background-color: #002a4b;
-  color: white;
-  padding: 5vw 10vw 5vw 10vw; /* Adjusted for simplicity, set this as needed */
-}
+@media (max-width: 1920px) {
+  #team {
+    display: block;
+    text-align: center;
+    background-color: #002a4b;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .equipo {
+    display: flex;
+    flex-wrap: wrap; /* Allow the flex items to wrap as needed */
+    justify-content: space-around; /* Distribute space around the items */
+    align-items: center; /* Align items vertically */
+    background-color: #002a4b;
+    color: white;
+    padding: 5vw 10vw 5vw 10vw; /* Adjusted for simplicity, set this as needed */
+  }
 
-.teamPic {
-  border-radius: 100%; /* Ensures the image is round */
-  object-fit: cover; /* Ensures the image covers the area */
-  width: 155px; /* Make the image fill the container */
-  height: 155px; /* Maintain aspect ratio */
-  box-shadow: 0px 2px 4px #00000029;
-}
-.teamLine {
-  display: flex;
-  height: 5px;
-  width: 60%;
-  margin: 0 auto; /* Center the border line */
-  border-bottom: 3px solid #559be2;
-}
+  .teamPic {
+    border-radius: 100%; /* Ensures the image is round */
+    object-fit: cover; /* Ensures the image covers the area */
+    width: 155px; /* Make the image fill the container */
+    height: 155px; /* Maintain aspect ratio */
+    box-shadow: 0px 2px 4px #00000029;
+  }
+  .teamLine {
+    display: flex;
+    height: 5px;
+    width: 60%;
+    margin: 0 auto; /* Center the border line */
+    border-bottom: 3px solid #559be2;
+  }
 
-.teamName {
-  width: 100%;
-  text-align: center;
-  color: white;
-  text-wrap: pretty;
-  margin-top: 10px;
+  .teamName {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-wrap: pretty;
+    margin-top: 10px;
+  }
+  .team-member {
+    flex: 0 0 calc(25% - 10px); /* Adjust '10px' to account for margins */
+    margin: 5px; /* Provides spacing between the items */
+    text-align: center;
+    max-width: 280px; /* Limits the width of the member */
+    margin: 0px 50px 0 50px;
+  }
+  #teamMobile {
+    display: none;
+  }
 }
-.team-member {
-  flex: 0 0 calc(25% - 10px); /* Adjust '10px' to account for margins */
-  margin: 5px; /* Provides spacing between the items */
-  text-align: center;
-  max-width: 280px; /* Limits the width of the member */
-  margin: 0px 50px 0 50px;
-}
-#teamMobile {
-  display: none;
-}
-
 @media (max-width: 960px) {
   .team-member {
     flex: 0 0 calc(33.333% - 10px); /* 3 items per row on smaller screens */
@@ -65,7 +66,7 @@
   transform: scale(1.1);
 }
 
-@media (min-width: 1366px) {
+@media (max-width: 1440px) {
   .equipo {
     padding: 5vw 3vw 5vw 3vw; /* Adjusted for simplicity, set this as needed */
   }
@@ -74,7 +75,7 @@
     margin: 0px 0px 0px 0px;
   }
 }
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .equipo {
     padding: 5vw 3vw 5vw 3vw; /* Adjusted for simplicity, set this as needed */
   }
@@ -83,6 +84,7 @@
     margin: 0px 0px 0px 0px;
   }
 }
+
 @media (max-width: 768px) {
   #team {
     display: none;
