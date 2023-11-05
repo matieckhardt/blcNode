@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const morgan = require("morgan"); // Import morgan
-const port = process.env.PORT || 3010; // Fixed the port variable
+const port = process.env.PORT || 46855; // Fixed the port variable
 
 // Morgan middleware
 app.use(morgan("dev"));
