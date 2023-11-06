@@ -1,3 +1,52 @@
+// Function to load images into the carousel
+function loadImagesIntoCarousel() {
+  console.log("caca");
+  fetch("/list-images")
+    .then((response) => response.json())
+    .then((images) => {
+      const carousel = document.getElementById("clientes-carrusel");
+      console.log(images);
+      images.forEach((image) => {
+        const img = document.createElement("img");
+        img.src = `/img/clientes/${image}`;
+        img.className = "img-clientes";
+        img.alt = `logo cliente ${image}`;
+        carousel.appendChild(img);
+      });
+
+      // Here you would re-initialize the carousel if needed,
+      // for example if you're using Slick Carousel:
+      // $(carousel).slick('unslick'); // First unslick the carousel if needed
+      // $(carousel).slick(); // Then initialize it again
+      $("#clientes-carrusel").slick({
+        dots: true,
+        autoplay: true,
+        draggable: true,
+        fade: true,
+        lazyLoad: "progressive",
+        infinite: true,
+        autoplayspeed: 3000,
+        slidesPerRow: 8,
+        rows: 2,
+        responsive: [
+          {
+            breakpoint: 478,
+            settings: {
+              slidesPerRow: 4,
+              fade: false,
+              rows: 4,
+            },
+          },
+        ],
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading images:", error);
+    });
+}
+loadImagesIntoCarousel();
+// Call the function to load images when the window loads
+
 $("#home-carrusel")
   .slick({
     arrows: false,
@@ -38,28 +87,6 @@ $("#alianzas-carrusel").slick({
   ],
 });
 
-$("#clientes-carrusel").slick({
-  dots: true,
-  autoplay: true,
-  draggable: true,
-  fade: true,
-  lazyLoad: "progressive",
-  infinite: true,
-  autoplayspeed: 3000,
-  slidesPerRow: 8,
-  rows: 2,
-  responsive: [
-    {
-      breakpoint: 478,
-      settings: {
-        slidesPerRow: 4,
-        fade: false,
-        rows: 4,
-      },
-    },
-  ],
-});
-
 $("#testimonios-carrusel").slick({
   arrows: true,
   autoplay: false,
@@ -83,22 +110,6 @@ $("#testimonios-carrusel").slick({
       },
     },
   ],
-});
-
-$("#casos-carrusel").slick({
-  arrows: true,
-  dots: false,
-  autoplay: false,
-  accesibility: true,
-  draggable: true,
-  fade: true,
-  lazyLoad: "progressive",
-  infinite: true,
-  speed: 2000,
-  prevArrow:
-    '<div class="slick-prev slick-arrow"><i class=" fas fa-chevron-left"></i></div>',
-  nextArrow:
-    '<div class="slick-next slick-arrow"><i class=" fas fa-chevron-right"></i></div>',
 });
 
 const animar = (el) => {
