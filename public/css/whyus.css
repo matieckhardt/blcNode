@@ -1,0 +1,87 @@
+/* This container sets the max-width and uses margin auto to center everything */
+.whycontainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100vw;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #002a4b;
+  padding: 0vw 26vw;
+}
+
+.whymain-container {
+  background-color: #002a4b;
+}
+
+.whytitle {
+  font-size: 50px;
+  margin-bottom: 70px; /* Add some space below the title */
+  text-align: center;
+  color: white;
+}
+
+/* This flexbox container will ensure children are aligned in a row and centered */
+.reasons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+}
+
+.reason-item {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start; /* Change to 'center' if you want them strictly centered */
+  gap: 1rem; /* This provides spacing between the icon and the text */
+  min-height: 100px;
+}
+
+.reason-image {
+  margin-right: 30px;
+  padding: 10px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.reason-text {
+  padding-top: 35px;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 300;
+  flex-grow: 1; /* This makes the text take the remaining space after the image */
+  width: 515px; /* Fixes issues with flex children in IE11 */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .reasons-container {
+    width: 100vw;
+  }
+  .whycontainer {
+    padding: 0vw;
+  }
+  .whytitle {
+    font-size: 30px;
+    margin-bottom: 70px; /* Add some space below the title */
+    text-align: center;
+    color: white;
+  }
+  .reason-image {
+    margin-right: 30px;
+    padding: 10px;
+    width: 80px;
+    object-fit: contain;
+  }
+
+  .reason-text {
+    padding-top: 35px;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 300;
+    flex-grow: 1; /* This makes the text take the remaining space after the image */
+    width: 183px; /* Fixes issues with flex children in IE11 */
+    color: white;
+  }
+}
