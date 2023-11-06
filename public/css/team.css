@@ -101,11 +101,17 @@
   #teamMobile {
     display: block;
   }
+  .equipo {
+    padding: 5vw 15vw 5vw 15vw;
+  }
   .teamPic {
     width: 155px; /* Make the image fill the container */
     height: 155px;
     border-radius: 100%;
     box-shadow: 0px 2px 4px #00000029;
+  }
+  .teamPic:hover {
+    transform: none;
   }
   .team-member {
     margin: 5px; /* Provides spacing between the items */

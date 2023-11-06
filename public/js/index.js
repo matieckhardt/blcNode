@@ -111,7 +111,15 @@ $("#testimonios-carrusel").slick({
     },
   ],
 });
-
+$("#teamCar").slick({
+  autoplay: true,
+  fade: false,
+  lazyLoad: "progressive",
+  infinite: true,
+  autoplayspeed: 2000,
+  slidesPerRow: 1,
+  rows: 1,
+});
 const animar = (el) => {
   let imagen = el.firstElementChild.firstElementChild;
   let cuadrado = el.lastElementChild.lastElementChild.lastElementChild;
