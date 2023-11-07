@@ -51,6 +51,10 @@ p {
   color: #002a4b !important;
   text-shadow: 0px 1px 1px #002a4b;
 }
+.nav-icon {
+  vertical-align: middle;
+  background-color: red;
+}
 
 /* anclajes */
 
