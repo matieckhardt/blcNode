@@ -506,7 +506,19 @@ p {
   html {
     font-size: 0.85rem;
   }
+  /* Mobile styles */
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .image-container {
+    order: 2; /* Will be placed after the text container */
+  }
+
+  .text-container {
+    order: 1; /* Will be placed before the image container */
+  }
   #nav-boston {
     padding: 5px 20px;
   }

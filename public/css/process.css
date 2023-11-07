@@ -159,8 +159,6 @@ le resolutions */
   #processMobile {
     display: block;
   }
-  .processMobileBg {
-  }
 }
 
 /* Desktop resolutions */
@@ -170,15 +168,14 @@ le resolutions */
 @media (min-width: 1280px) {
   .icon:hover {
     transform: scale(1.4);
-    
   }
   .icon:hover span {
     font-size: 10px;
   }
-    .square:hover {
+  .square:hover {
     transform: scale(1.1);
-      padding: 4px;
-}
+    padding: 4px;
+  }
 
   .chart-container {
     margin: 9vw 6vw;
@@ -194,8 +191,7 @@ le resolutions */
   }
   .square:hover {
     transform: scale(1.1);
-      padding: 1px;
-}
+    padding: 1px;
   }
   .chart-container {
     margin: 9vw 6vw;

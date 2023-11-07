@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  if (screenWidth <= 768) {
+    // Adjust the width as needed for your breakpoint
+    var container = document.querySelector(".contenedor-nosotros");
+    var textContainer = document.querySelector(".text-container");
+    var imageContainer = document.querySelector(".image-container");
+
+    // Move the text container before the image container
+    container.insertBefore(textContainer, imageContainer);
+  }
+});
+
 // Function to load images into the carousel
 function loadImagesIntoCarousel() {
   console.log("caca");
