@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const items = [
     {
       name: "handshake",
-      top: "3vw",
+      top: "6vw",
       left: "-2.8vw",
       type: "square",
       icon: "1",
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "end",
-      top: "-40vw",
+      top: "-38vw",
       left: "47vw",
       type: "square",
       icon: "8",
@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
   items.forEach((item) => {
     const itemDiv = document.createElement("div");
     itemDiv.className = item.type;
-    itemDiv.style.width = "6vw";
-    itemDiv.style.height = "6vw"; // Setting height to maintain aspect ratio
     itemDiv.style.top = item.top;
     itemDiv.style.left = item.left;
 
@@ -89,7 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
       itemDiv.appendChild(textSpan);
       textSpan.style.color = "white";
       itemDiv.classList.add("hover");
-      img.style.display = "none"; // Hide the image when hovering
+      img.style.margin = "15px";
+      if (itemDiv.className.includes("icon")) {
+        img.style.display = "none"; // Hide the image when hovering if class = "icon"
+      }
     });
 
     itemDiv.addEventListener("mouseleave", function () {
