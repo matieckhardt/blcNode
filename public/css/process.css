@@ -158,6 +158,13 @@ le resolutions */
   }
   #processMobile {
     display: block;
+    position: relative;
+    text-align: center;
+    padding: 2vw 11vw;
+  }
+  .iconHover {
+    height: 111px;
+    width: 111px;
   }
 }
 

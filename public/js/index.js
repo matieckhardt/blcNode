@@ -1,19 +1,71 @@
-document.addEventListener("DOMContentLoaded", function () {
+function debounce(func, wait, immediate) {
+  var timeout;
+  return function () {
+    var context = this,
+      args = arguments;
+    var later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+
+function checkAndReorderElements() {
   var screenWidth =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 
-  if (screenWidth <= 768) {
-    // Adjust the width as needed for your breakpoint
-    var container = document.querySelector(".contenedor-nosotros");
-    var textContainer = document.querySelector(".text-container");
-    var imageContainer = document.querySelector(".image-container");
+  var container = document.querySelector(".contenedor-nosotros");
+  var textContainer = document.querySelector(".text-container");
+  var imageContainer = document.querySelector(".image-container");
 
-    // Move the text container before the image container
-    container.insertBefore(textContainer, imageContainer);
+  if (screenWidth >= 1200) {
+    // Check if textContainer is already the first element
+    if (textContainer !== container.firstChild) {
+      container.insertBefore(imageContainer, textContainer);
+    }
+    adjustBootstrapColumns(false); // Ensure columns are set for smaller screens
+  } else {
+    // Check if imageContainer is not already the first element (meaning it was moved for mobile)
+    if (imageContainer !== container.firstChild) {
+      container.insertBefore(textContainer, imageContainer);
+    }
+    adjustBootstrapColumns(true); // Adjust columns for larger screens
   }
+}
+
+function adjustBootstrapColumns(isLargeScreen) {
+  var allColMd6Elements = document.querySelectorAll(".col-md-6");
+
+  allColMd6Elements.forEach(function (col) {
+    if (isLargeScreen) {
+      col.classList.remove("col-md-6");
+      col.classList.add("col-md-12");
+    } else {
+      col.classList.remove("col-md-12");
+      col.classList.add("col-md-6");
+    }
+  });
+}
+
+// Initial check
+document.addEventListener("DOMContentLoaded", function () {
+  checkAndReorderElements(); // This will also call adjustBootstrapColumns accordingly
 });
+
+// Listen for resize events
+window.addEventListener("resize", debounce(checkAndReorderElements, 250));
+
+// Initial check
+document.addEventListener("DOMContentLoaded", checkAndReorderElements);
+
+// Listen for resize events
+window.addEventListener("resize", debounce(checkAndReorderElements, 250));
 
 // Function to load images into the carousel
 function loadImagesIntoCarousel() {
