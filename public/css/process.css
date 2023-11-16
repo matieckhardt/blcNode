@@ -78,7 +78,7 @@
   position: relative;
   top: 13vw;
   height: 4vw; /* Fixed height might need adjustment */
-  width: 219px; /* Changed from width to min-width to accommodate longer text */
+  width: 190px; /* Changed from width to min-width to accommodate longer text */
   margin-bottom: 2.3vw;
   color: white;
   background-color: #015ea5;
@@ -129,13 +129,13 @@
   position: relative;
   top: -977px;
   height: 84px; /* Fixed height might need adjustment */
-  width: 219px; /* Changed from width to min-width to accommodate longer text */
+  width: 200px; /* Changed from width to min-width to accommodate longer text */
   color: white;
   background-color: #015ea5;
   border-radius: 23px;
   overflow: hidden;
   box-shadow: 0px 3px 6px #21212129;
-  padding: 10px 20px 20px 20px; /* Adjusted padding for visual balance */
+  padding: 10px 20px 10px 20px; /* Adjusted padding for visual balance */
 }
 
 .squareHover img {

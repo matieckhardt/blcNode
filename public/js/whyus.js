@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const reasons = [
     {
-      title: "Mas de 30 años de experiencia en el mercado corporativo",
+      title: "Más de 30 años de experiencia en el mercado corporativo",
       image: "/whyus/0.png",
       order: 0,
     },

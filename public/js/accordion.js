@@ -36,7 +36,7 @@ De inglés general o de negocios, de español y de portugués según nivel de id
       zIndex: 4,
     },
     {
-      title: "DIAGNÓSTICO DE DESEMPEÑO LINGÜISTICO",
+      title: "DIAGNÓSTICO DE DESEMPEÑO LINGÜÍSTICO",
       description: `
 A través de una evaluación integral de nivel de lengua, medimos los conocimientos lingüísticos y la capacidad de un candidato para comunicarse en su potencial puesto de trabajo.`,
       color: "#8D5BB5", // MediumPurple
@@ -44,7 +44,7 @@ A través de una evaluación integral de nivel de lengua, medimos los conocimien
     },
     {
       title: "SERVICIO DE TRADUCCIÓN Y SERVICIO DE INTERPRETACIÓN",
-      description: `Servicio de traducción y servicio de Interpretación (simultánea, consecutiva, susurro y simultánea remota (ISR)).
+      description: `Servicio de traducción y servicio de Interpretación: simultánea, consecutiva, susurro y simultánea remota (ISR).
 Con altos estándares de precisión, nuestro equipo lidera proyectos de traducción o interpretación en variadas industrias o áreas técnicas.`,
       color: "#83B58C", // Gold
       zIndex: 2,
