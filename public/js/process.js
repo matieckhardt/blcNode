@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       left: "33.5vw",
       type: "icon",
       icon: "6",
-      inner: "Seguimientos y encuestas",
+      inner: "Seguimiento y encuestas",
     },
     {
       name: "results",
