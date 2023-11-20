@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       textSpan.style.color = "white";
       itemDiv.classList.add("hover");
       img.style.margin = "15px";
+      img.classList.add("imageSquare");
       if (itemDiv.className.includes("icon")) {
         img.style.display = "none"; // Hide the image when hovering if class = "icon"
       }
